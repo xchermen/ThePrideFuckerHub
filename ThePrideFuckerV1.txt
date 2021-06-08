@@ -1,0 +1,80 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("HYPE HUB", "Sentinel")
+
+local Tab = Window:NewTab("Home") 
+local Section = Tab:NewSection("VERSION: V1.3.7")
+local Section = Tab:NewSection("Thanks for using! <3")
+local Section = Tab:NewSection("Click the tabs on the left for feautres!")
+local Section = Tab:NewSection("IMPORTANT: PLEASE REPORT BUGS!!")
+
+
+
+
+
+
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Main Features")
+Section:NewButton("Infinite Yield FE Admin", "Infinite Yeild", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+Section:NewButton("Anti-Afk", "Antiafk", function()
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+end)
+
+local Tab = Window:NewTab("Teleports")
+local Section = Tab:NewSection("Teleports")
+Section:NewButton("TP to Sanatorium", "Tp to the Sanatorium", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4225.70947, 406.243774, 999.391235)
+end)
+Section:NewButton("TP to Lockers", "Tp to the Clothing", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4157.451, 403.449, 1008.901)
+end)
+Section:NewButton("TP to Lecture Hall", "Tp to the Lecture Hall", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4449.588, 439.264, 1070.325)
+end)
+Section:NewButton("TP to Staff Room", "Tp to the Staff Room", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4042.636, 439.154, 1193.303)
+end)
+Section:NewButton("TP to Kitchen", "Tp to the Kitchen", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4090.648, 442.988, 1051.344)
+end)
+Section:NewButton("TP to Secret place", "Tp to the Secret Dev place", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3778.841, 68.867, 112.924)
+end)
+local Section = Tab:NewSection("More coming soon, DM if you have a place.")
+
+
+
+local Tab = Window:NewTab("Utilites")
+Section:NewSlider("Walkspeed Changer", "ws changfer", 500, 0, function(s) -- 500 (MaxValue) | 17 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Sect:NewSlider("JumpSpeed", "jumpower changer", function(state)
+game:GetService('Players').LocalPlayer.Humanoid.JumpPower = state
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("cheirmen#5015 -- UI & Scripting")
+local Section = Tab:NewSection("xHeptc#2255 -- Emotional help & Scripting help")
+local Section = Tab:NewSection("verm -- my life and my mom beating me lol")
+local Section = Tab:NewSection("Discord.gg/heyDbdUC79")
